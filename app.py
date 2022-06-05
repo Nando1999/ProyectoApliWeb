@@ -18,6 +18,13 @@ app=Flask(__name__, template_folder='templates')
 def inicio():
     return render_template('principal.html')
 
+#Ruta página de zapatos html
+@app.route('/contactos')
+
+#función que retorna la página
+def zapatos():
+    return render_template('contactos.html')
+
 
 if __name__=='__main__':
     app.run(debug=True)
