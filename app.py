@@ -16,7 +16,7 @@ def principal():
     return render_template('principal.html')
 
 #Ruta página de zapatos html
-@app.route('/contactos')
+@app.route('/contactos.html')
 
 #función que retorna la página
 def contactos():
