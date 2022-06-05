@@ -12,11 +12,11 @@ app=Flask(__name__, template_folder='templates')
 @app.route('/')
 
 #Ruta página de inicio html
-@app.route('/inicio')
+@app.route('/principal')
 
 #función que retorna la página
 def inicio():
-    return render_template('inicio.html')
+    return render_template('principal.html')
 
 
 if __name__=='__main__':
