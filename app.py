@@ -11,18 +11,15 @@ app=Flask(__name__, template_folder='templates')
 #Ruta raíz
 @app.route('/')
 
-#Ruta página de inicio html
-@app.route('/principal')
-
 #función que retorna la página
-def inicio():
+def principal():
     return render_template('principal.html')
 
 #Ruta página de zapatos html
 @app.route('/contactos')
 
 #función que retorna la página
-def zapatos():
+def contactos():
     return render_template('contactos.html')
 
 
